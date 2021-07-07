@@ -22,37 +22,37 @@ public class Exer2ArraysVetores {
 			System.out.println("\n Digite um número inteiro: ");
 			num[x] = leia.nextInt();
 		}
+		
+		System.out.print("Os números pares são: ");
+		
 		for (x = 0; x <= 5; x++)
 
         {
             //System.out.println("\nOs números foram: " + num[x]);
         
-			if(num[x] % 2 == 0)
+			if(num[x] % 2 == 0 && num[x] != 0)
 			{
-				//par = num[x];
 				somaPar = somaPar + num[x];
-				System.out.println("\n Número " +num[x]+ " digitado é par ");
+				System.out.print(num[x]+" ");
 			}
-			else
+        }
+		
+		System.out.print("\nOs números impares são: ");
+		
+		for (x = 0; x <=5; x++)
+		{
+			if(num[x] % 2 ==1)
 			{
-				//impar = num[x];
 				contImpar++;
-				System.out.println("\n Número " +num[x]+ " digitado é impar ");
+				System.out.print(num[x]+" ");
 			}
 			
         }	
 			
-		/*for (x = 0; x < 5; x++)
-
-        {
-            System.out.println("\nOs números foram: " + num[x]);
-        }*/
-		//System.out.println("\n Os números pares foram: "+par);
-		System.out.println("\n Soma dos números pares: "+somaPar);
-		//System.out.println("\n Os números impares foram: "+impar);
-		System.out.println("\n Quantidade de números íimpares: "+contImpar);
-		//System.out.println("\n Número" +par+ "digitado é par ");
-		//System.out.println("\n Número" +impar+ "digitado é impar ");
+		
+		System.out.println("\nA Soma dos números pares: "+somaPar);
+		System.out.println("\nA Quantidade de números íimpares: "+contImpar);
+		
 		
 	}
 
