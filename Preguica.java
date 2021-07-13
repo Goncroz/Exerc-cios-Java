@@ -1,32 +1,20 @@
 package Lucas;
 
 public class Preguica extends Animal
-{
-	private float gramas;
-	
-	public Preguica (String nome,int idade,String dono,String comida,float gramas)
+{	
+	public Preguica (String nome,int idade,String som,String movimento)
 	{
-		super(nome,idade,dono,comida);
-		this.gramas = gramas;
+		super(nome,idade,som,movimento);
 	}
-
-	public float getGramas() {
-		return gramas;
-	}
-
-	public void setGramas(float gramas) {
-		this.gramas = gramas;
-	}
-	
-	public void imprimirPreguica()
+	@Override
+	public void movimento()
 	{
-		System.out.println("\nInformações da Preguiça");
-		System.out.println("\nNome da preguiça: "+getNome());
-		System.out.println("Idade da preguiça: "+getIdade()+" anos");
-		System.out.println("Nome do(a) dono(a): "+getDono());
-		System.out.println("Alimentação da preguiça: "+gramas+"g de "+getComida());
-		System.out.println("\n*************************************************");
+		System.out.println("\n A preguiça "+getNome()+" tem "+getIdade()+" anos de idade e o movimento dele é "+getMovimento());
 	}
-
+	@Override
+	public void som()
+	{
+		System.out.println("\nO som deste animal é "+getSom());
+	}
 	
 }

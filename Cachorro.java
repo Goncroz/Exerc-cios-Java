@@ -2,39 +2,20 @@ package Lucas;
 
 public class Cachorro extends Animal
 {
-	private float kg;
 
-
-public Cachorro (String nome,int idade,String dono,String comida,float kg)
+public Cachorro (String nome,int idade,String som, String movimento)
 {
-	super(nome,idade,dono,comida);
-	this.kg = kg;
+	super(nome,idade,som,movimento);
 }
-
-
-
-
-public float getKg() {
-	return kg;
-}
-
-
-
-
-public void setKg(float kg) {
-	this.kg = kg;
-}
-
-
-
-
-public void imprimirCachorro()
+@Override
+public void movimento() 
 {
-	System.out.println("\nInformações do Cachorro");
-	System.out.println("\nNome do cachorro: "+getNome());
-	System.out.println("Idade do cachorro: "+getIdade()+" anos");
-	System.out.println("Nome do dono: "+getDono());
-	System.out.println("Alimentação do cachorro: "+kg+"kg de "+getComida());
-	System.out.println("\n*************************************************");
+	System.out.println("\n O cachorro "+getNome()+" tem "+getIdade()+" anos de idade e o movimento dele é "+getMovimento());
 }
+@Override
+public void som()
+{
+	System.out.println("\n O som deste animal é "+getSom());
+}
+
 }

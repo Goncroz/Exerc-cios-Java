@@ -1,16 +1,26 @@
 package Lucas;
 
-public class Teste {
+public class Teste 
+{
 
-	public static void main(String[] args) {
-		Cachorro Tchala = new Cachorro ("TChala", 7 ,"Rodrigo","Ração Premium",1);
-		Cavalo Corsel = new Cavalo ("Corsel" , 2 , "Rosana","Capim Fresco", 3,4);
-		Preguica Flexa = new Preguica ("Flexa",20,"Maykon","Folhas Frescas",400);
+	public static void main(String[] args) 
+	{
+		Animal Cachorro = new Cachorro ("Tchala",3,"AU AU","correr");
+		Animal Cavalo = new Cavalo ("Corsel",9,"Relincha", "correr");
+		Animal Preguica = new Preguica ("Priscila",19,"Fi Fi", "sobe em árvores");
 		
-		Tchala.imprimirCachorro();
-		Corsel.imprimirCavalo();
-		Flexa.imprimirPreguica();
-
+		Cachorro.movimento();
+		Cachorro.som();
+		
+		System.out.println("___________________________________________________");
+		
+		Cavalo.movimento();
+		Cavalo.som();
+		
+		System.out.println("___________________________________________________");
+		
+		Preguica.movimento();
+		Preguica.som();
 	}
 
 }

@@ -1,63 +1,52 @@
 package Lucas;
 
-public class Animal 
+public abstract class Animal 
 {
 	private String nome;
 	private int idade;
-	private String dono;
-	private String comida;
+	private String som;
+	private String movimento;
 	
 	
-	public Animal (String nome,int idade,String dono, String comida)
+	public Animal (String nome,int idade,String som,String movimento)
 	{
 		super ();
 		this.nome = nome;
 		this.idade = idade;
-		this.dono = dono;
-		this.comida = comida ;
-		
+		this.som = som;
+		this.movimento = movimento;
 	}
-
-
 	public String getNome() {
 		return nome;
 	}
-
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-
 	public int getIdade() {
 		return idade;
 	}
-
-
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-
-
-	public String getDono() {
-		return dono;
+	
+	public String getSom() {
+		return som;
 	}
-
-
-	public void setDono(String dono) {
-		this.dono = dono;
+	public void setSom(String som) {
+		this.som = som;
 	}
-
-
-	public String getComida() {
-		return comida;
+	public String getMovimento() {
+		return movimento;
 	}
-
-
-	public void setComida(String comida) {
-		this.comida = comida;
+	public void setMovimento(String movimento) {
+		this.movimento = movimento;
 	}
-
-
-		
+	public void movimento()
+	{
+		System.out.println("O movimento deste animal é...");
+	}
+	public void som()
+	{
+		System.out.println("O som deste animal é...");
+	}
 }
